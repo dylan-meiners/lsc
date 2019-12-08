@@ -1,0 +1,22 @@
+{
+  "name": "lsc",
+  "version": "0.1.0",
+  "description": "A very basic Vixen light show controller",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylan-meiners/lsc.git"
+  },
+  "author": "dylan-meiners",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylan-meiners/lsc/issues"
+  },
+  "homepage": "https://github.com/dylan-meiners/lsc#readme",
+  "devDependencies": {
+    "electron": "^7.1.3"
+  }
+}
