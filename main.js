@@ -1,6 +1,7 @@
 const electron = require('electron')
-
 const { app, BrowserWindow } = require('electron')
+
+electron.Menu.setApplicationMenu(null)
 
 function createWindow() {
     let win = new BrowserWindow({
@@ -13,14 +14,16 @@ function createWindow() {
 
     win.loadFile('index.html')
 
-    //win.webContents.openDevTools()
+    win.webContents.openDevTools()
 
     win.on('closed', () => {
         win = null
     })
 }
 
-app.on('ready', createWindow)
+app.on('ready', () => {
+    createWindow()
+})
 
 app.on('window-all-closed', () => {
     if (process.platform != 'darwin') {

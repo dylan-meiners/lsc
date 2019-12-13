@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Light', sans-serif;
+}
+
+a {
+    color: #898989;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #a00000;
+}
+
+.nav a {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.nav_active {
+    background-color: #d30000;
+    color: #fff;
+}
+
+.content {
+    margin-left: 250px;
+    height: 100vh;
+    background-color: #7d0000;
+}
