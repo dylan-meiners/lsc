@@ -40,4 +40,40 @@ a {
     margin-left: 250px;
     height: 100vh;
     background-color: #7d0000;
+    padding: 50px;
+}
+
+.content hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #898989;
+}
+
+.content p {
+    display: inline;
+    color: #898989;
+    font-size: 30px;
+}
+
+.data {
+    float: right;
+    color: #0062ff;
+    font-size: 30px;
+}
+
+.info {
+    color: #0062ff;
+}
+
+.positive {
+    color: #24d900;
+}
+
+.negative {
+    color: #d30000;
+}
+
+.refresh {
+    width: 25px;
+    height: auto;
 }
