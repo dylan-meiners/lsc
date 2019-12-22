@@ -1,5 +1,6 @@
 const electron = require('electron')
 const { app, BrowserWindow } = require('electron')
+const server = require('./src/js/server')
 
 electron.Menu.setApplicationMenu(null)
 
@@ -12,13 +13,15 @@ function createWindow() {
         }
     })
 
-    win.loadFile('index.html')
+    win.loadFile('./src/html/index.html')
 
     win.webContents.openDevTools()
 
     win.on('closed', () => {
         win = null
     })
+
+    var python_server_file = require('child_process').spawn('python', ['./src/py/client.py'])
 }
 
 app.on('ready', () => {
