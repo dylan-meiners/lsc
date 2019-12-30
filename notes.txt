@@ -1,0 +1,3 @@
+What the python time stuff will need
+Per day:
+- Time (start and finish)

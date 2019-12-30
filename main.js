@@ -6,8 +6,14 @@ electron.Menu.setApplicationMenu(null)
 
 function createWindow() {
     let win = new BrowserWindow({
-        width: 1500,
-        height: 900,
+        width: 1200,
+        height: 600,
+        x: 10,
+        y: 10,
+        //width: 1500,
+        //height: 900,
+        //x: 1600,
+        //y: -400,
         webPreferences: {
             nodeIntegration: true
         }
@@ -21,7 +27,7 @@ function createWindow() {
         win = null
     })
 
-    var python_server_file = require('child_process').spawn('python', ['./src/py/client.py'])
+    //var python_server_file = require('child_process').spawn('python', ['./src/py/client.py'])
 }
 
 app.on('ready', () => {
